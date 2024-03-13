@@ -1,5 +1,5 @@
 import './style.css'
-import "./topics/06-function-destructuring"
+import "./topics/11-optional-chaining"
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <h1>Hello World!</h1>

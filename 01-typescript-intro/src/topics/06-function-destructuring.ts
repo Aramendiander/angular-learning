@@ -1,4 +1,4 @@
-interface Product {
+export interface Product {
     description: string;
     price: number;
 }
@@ -21,7 +21,7 @@ interface TaxCalculationOptions {
 
 /* const taxCalculation = (options:  TaxCalculationOptions): [number, number] => { */
 /* const taxCalculation = ({tax, products}:  TaxCalculationOptions): [number, number] => { */
-const taxCalculation = (options: TaxCalculationOptions): [number, number] => {
+export const taxCalculation = (options: TaxCalculationOptions): [number, number] => {
     const {tax, products} = options;
     let total = 0;
     products.forEach(({ price }) => {
@@ -38,7 +38,7 @@ const [totalResult, taxResult] = taxCalculation({
     tax,
 })
 
-console.log(totalResult, taxResult);
+/* console.log(totalResult, taxResult); */
 
 
 
