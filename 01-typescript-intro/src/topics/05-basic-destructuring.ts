@@ -21,6 +21,14 @@ const audioPlayer: AudioPlayer = {
     }
 }
 
+const {song,details} = audioPlayer;
+const { author } = details;
 
+/* console.log(song,author) */
+
+
+const [p1,p2, trunks]: string[] = ["Goku","Vegeta","Trunks"];
+
+console.log(p1, trunks)
 
 export {}
